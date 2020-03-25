@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C:\Users\Nies\Documents\GitHub\Survey-2\Survey_2_CSS.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+  <div id="left-picture">
+    <img id="used-truck" src="./IMG/Used_truck_survey_2.jpg" alt="Used Truck">
+  </div>
+<form id="survey-form">
+  <div id="content">
+    <div id="title">
+      <h1>What do you look for in a used car?</h1> 
+    </div>
+    <div id="buy-sell-title">
+      <p>Are you a buyer or seller?</p> 
+    </div>
+    <div id="buy-sell-content">
+      <p><input type="radio" name="owner-seller" value="seller" checked="checked"><label id="label-seller" for="">Seller</label><input type="radio" name="owner-seller" value="seeker"><label id="label-seeker" for="">Seeker</label> </p>
+    </div>
+    
+    <div>
+      <label id="label-name" for="">Name:</label>
+      <input id="name-box" type="text" type="name"  name="name" size="40" max="40"  placeholder="Name" required />
+    </div>
+    <div>
+      <label id="label-name" for="">Email:</label>
+      <input id="box-email" type="text" name="email" size="40" maxlength="40" placeholder="Email" required />
+      
+    </div> 
+    <div id="age-container">
+      <label id="label-age" for="age">Age:</label>
+      <input type="number" name="age" size="3" maxlength="3" placeholder="Age" min="18" max="112" required>
+    </div>
+    <div id="dropdown-menue">
+      <label for="" id="label-favorite-brand">What is your favorit car brand?</label><br/>
+      <select id="dropdown-brand" name="favorit-car-brand">
+          <option value="Ford">Ford</option>
+          <option value="Honda">Honda</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Other">Other</option>
+      </select>
+      <br/>
+        <label for="" id="Car-attributes">What are the most important car attributes; pick three?</label>
+        <br/><form id="survey-form"></form> 
+        <input type="checkbox" name="attribute" value="body">Body
+        <input type="checkbox" name="attribute" value="transmission">Transmission
+        <input type="checkbox" name="attribute" value="Engine">Engine
+        <input type="checkbox" name="attribute" value="Miles">Miles
+        <input type="checkbox" name="attribute" value="Age">Age<br/>
+      
+      <label id="label-thoughts" for="">Any other thoughts on a used car?</label><br/>
+      <textarea name="comments" id="textarea-box" cols="50" rows="10">Enter your thoughts...</textarea><br/>
+      
+        
+        <button id="submit" type="submit" class="submit"><b>Submit</b></button> 
+    
+    </div>
+</form>  
+  </div>
+
+
+<div id="side-bar-right"><p></p></div>
+</div> 
+</body>
+</html>
